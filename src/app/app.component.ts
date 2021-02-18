@@ -31,5 +31,11 @@ export class AppComponent {
                 );
             });
         }
+
+        document.body.ontouchmove = (e) => {
+            console.log(e);
+            e.preventDefault();
+            return false;
+        };
     }
 }
