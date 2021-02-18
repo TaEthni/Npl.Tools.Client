@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './shared/material.module';
 import { ToolsComponent } from './tools/tools.component';
 import { ToolCardComponent } from './tool-card/tool-card.component';
+import { GappNewsComponent } from './gapp-news/gapp-news.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         ToolsComponent,
-        ToolCardComponent
+        ToolCardComponent,
+        GappNewsComponent
     ],
     imports: [
         BrowserModule,

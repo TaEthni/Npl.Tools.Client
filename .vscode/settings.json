@@ -4,5 +4,8 @@
     "html.format.wrapAttributes": "force-aligned",
     "html.format.enable": true,
     "typescriptHero.imports.stringQuoteStyle": "'",
-    "tslint.jsEnable": true
+    "tslint.jsEnable": true,
+    "cSpell.ignoreWords": [
+        "gapp"
+    ]
 }
