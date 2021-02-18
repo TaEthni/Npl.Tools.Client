@@ -22,6 +22,7 @@ html, body {
     height: -webkit-fill-available;
     overflow: hidden;
     position: relative;
+    background-color: mat-color($primary);
 }
 
 body {
