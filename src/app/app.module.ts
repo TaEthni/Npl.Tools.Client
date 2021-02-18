@@ -8,6 +8,8 @@ import { MaterialModule } from './shared/material.module';
 import { ToolsComponent } from './tools/tools.component';
 import { ToolCardComponent } from './tool-card/tool-card.component';
 import { GappNewsComponent } from './gapp-news/gapp-news.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
     declarations: [
@@ -20,7 +22,8 @@ import { GappNewsComponent } from './gapp-news/gapp-news.component';
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        MaterialModule
+        MaterialModule,
+        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
     ],
     providers: [],
     bootstrap: [AppComponent]

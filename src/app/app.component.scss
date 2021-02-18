@@ -3,6 +3,7 @@
     height: 100vh;
     height: -webkit-fill-available;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
 
     .mat-toolbar {
         position: sticky;
