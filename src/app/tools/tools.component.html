@@ -1,0 +1,57 @@
+<header fxLayout="row"
+        fxLayoutAlign="center center"
+        class="tools-header">
+    <div fxLayout="column"
+         fxLayoutAlign="center center">
+        <h1>NoPlaceLeft.Tools</h1>
+        <h2>Tools used across the network for training disciples to make disciples</h2>
+
+        <button mat-flat-button>
+            Get Started
+        </button>
+    </div>
+</header>
+
+<main fxLayout="column"
+      fxLayoutAlign="center center">
+
+    <section fxLayout="column">
+        <header>
+            <h2>Featured Tools</h2>
+            <article fxLayout="row"
+                     fxLayoutGap="24px">
+                <ng-container *ngFor="let tool of featured">
+                    <app-tool-card [tool]="tool"></app-tool-card>
+                </ng-container>
+            </article>
+        </header>
+    </section>
+
+    <mat-divider></mat-divider>
+
+    <section fxLayout="column">
+        <header>
+            <h2>Training</h2>
+            <article fxLayout="row"
+                     fxLayoutGap="24px">
+                <ng-container *ngFor="let tool of trainings">
+                    <app-tool-card [tool]="tool"></app-tool-card>
+                </ng-container>
+            </article>
+        </header>
+    </section>
+
+    <mat-divider></mat-divider>
+
+    <section fxLayout="column">
+        <header>
+            <h2>GenMappers</h2>
+            <article fxLayout="row"
+                     fxLayoutGap="24px">
+                <ng-container *ngFor="let tool of GenMappers">
+                    <app-tool-card [tool]="tool"></app-tool-card>
+                </ng-container>
+            </article>
+        </header>
+    </section>
+</main>

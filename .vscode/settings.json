@@ -1,0 +1,8 @@
+{
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "html.format.wrapAttributes": "force-aligned",
+    "html.format.enable": true,
+    "typescriptHero.imports.stringQuoteStyle": "'",
+    "tslint.jsEnable": true
+}
