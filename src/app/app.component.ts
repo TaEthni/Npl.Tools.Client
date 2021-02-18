@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { SwUpdate } from '@angular/service-worker';
+import { disableBodyScroll } from 'body-scroll-lock';
 
 @Component({
     selector: 'app-root',
@@ -7,9 +8,13 @@ import { SwUpdate } from '@angular/service-worker';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    constructor(updates: SwUpdate) {
-        if (updates.isEnabled) {
+    constructor(
+        private updates: SwUpdate,
+        private elementRef: ElementRef
+    ) {
+        disableBodyScroll(elementRef.nativeElement);
 
+        if (updates.isEnabled) {
             updates.available.subscribe((event) => {
                 console.log('current version is', event.current);
                 console.log('available version is', event.available);
@@ -32,10 +37,14 @@ export class AppComponent {
             });
         }
 
-        document.body.ontouchmove = (e) => {
-            console.log(e);
-            e.preventDefault();
-            return false;
-        };
+        // document.body.ontouchmove = (e) => {
+        //     console.log(e);
+        //     e.preventDefault();
+        //     return false;
+        // };
+    }
+
+    public reload(): void {
+        this.updates.activateUpdate().then(() => document.location.reload());
     }
 }
