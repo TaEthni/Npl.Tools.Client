@@ -22,7 +22,7 @@ export const TOOLS: Tool[] = [
         title: 'NPL SimpleTools',
         description: 'NO PLACE LEFT simple training tools',
         logoUrl: 'assets/nplsimpletools.png',
-        link: 'https://www.livinghope.school/',
+        link: 'https://www.nplsimpletools.com/',
         category: Category.Training
     },
     {
