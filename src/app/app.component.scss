@@ -4,9 +4,11 @@
     height: -webkit-fill-available;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior: none;
 
     .mat-toolbar {
         position: sticky;
+        z-index: 1000;
         top: 0;
 
         img {
