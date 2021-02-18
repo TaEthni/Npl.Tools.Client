@@ -4,7 +4,7 @@
     height: -webkit-fill-available;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    overscroll-behavior: none;
+    overscroll-behavior: contain;
     background-color: #fafafa;
 
     .mat-toolbar {
