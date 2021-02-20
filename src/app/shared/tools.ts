@@ -2,19 +2,30 @@ import { Category, Tool } from './tools.interface';
 
 export const TOOLS: Tool[] = [
     {
+        name: 'GAPP',
+        title: 'GAPP',
+        description: 'GenMapper 2.0 (Gospel to All Peoples and Places)',
+        logoUrl: 'assets/GAPP_logo_ver.png',
+        link: 'https://gapp.taethni.com',
+        category: Category.GenMapper,
+        comingSoon: true,
+        isFeatured: true
+    },
+    {
         name: 'NPLGenMapper',
         title: 'NPL GenMapper',
         description: 'The original genampper at noplaceleft.tools',
         logoUrl: 'assets/npl-tools-logo-2018.png',
         link: 'https://npl.genmapper.com',
-        category: Category.GenMapper
+        category: Category.GenMapper,
+        isFeatured: true
     },
     {
         name: 'Pathways GenMapper',
         title: 'Pathways GenMapper',
         description: 'Data collection and assessment tool for coaching church planters',
         logoUrl: 'assets/pathways-genmapper.jpg',
-        link: 'https://npl.genmapper.com',
+        link: 'https://genmapper.com',
         category: Category.GenMapper
     },
     {
@@ -23,7 +34,8 @@ export const TOOLS: Tool[] = [
         description: 'NO PLACE LEFT simple training tools',
         logoUrl: 'assets/nplsimpletools.png',
         link: 'https://www.nplsimpletools.com/',
-        category: Category.Training
+        category: Category.Training,
+        isFeatured: true
     },
     {
         name: 'LivingHope',

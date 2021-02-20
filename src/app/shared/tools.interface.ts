@@ -10,4 +10,6 @@ export interface Tool {
     link: string;
     logoUrl: string;
     category: string;
+    comingSoon?: boolean;
+    isFeatured?: boolean;
 }

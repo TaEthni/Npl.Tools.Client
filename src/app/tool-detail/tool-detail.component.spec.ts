@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GappNewsComponent } from './gapp-news.component';
+import { ToolDetailComponent } from './tool-detail.component';
 
-describe('GappNewsComponent', () => {
-  let component: GappNewsComponent;
-  let fixture: ComponentFixture<GappNewsComponent>;
+describe('ToolDetailComponent', () => {
+  let component: ToolDetailComponent;
+  let fixture: ComponentFixture<ToolDetailComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GappNewsComponent ]
+      declarations: [ ToolDetailComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GappNewsComponent);
+    fixture = TestBed.createComponent(ToolDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

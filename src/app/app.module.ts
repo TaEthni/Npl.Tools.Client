@@ -1,22 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
+import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './shared/material.module';
-import { ToolsComponent } from './tools/tools.component';
 import { ToolCardComponent } from './tool-card/tool-card.component';
-import { GappNewsComponent } from './gapp-news/gapp-news.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+import { ToolDetailComponent } from './tool-detail/tool-detail.component';
+import { ToolsComponent } from './tools/tools.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         ToolsComponent,
         ToolCardComponent,
-        GappNewsComponent
+        ToolDetailComponent
     ],
     imports: [
         BrowserModule,
