@@ -26,23 +26,24 @@ export const TOOLS: Tool[] = [
         description: 'Data collection and assessment tool for coaching church planters',
         logoUrl: 'assets/pathways-genmapper.jpg',
         link: 'https://genmapper.com',
-        category: Category.GenMapper
-    },
-    {
-        name: 'SimpleTools',
-        title: 'NPL SimpleTools',
-        description: 'NO PLACE LEFT simple training tools',
-        logoUrl: 'assets/nplsimpletools.png',
-        link: 'https://www.nplsimpletools.com/',
-        category: Category.Training,
+        category: Category.GenMapper,
         isFeatured: true
     },
-    {
-        name: 'LivingHope',
-        title: 'LivingHope.School',
-        description: 'The purpose of this site is to freely give others one easily accessible website with simple, biblical, language specific tools to assist in their obedience to Jesus.',
-        logoUrl: 'assets/livinghope.school.jpg',
-        link: 'https://www.livinghope.school/',
-        category: Category.Training
-    }
+    // {
+    //     name: 'SimpleTools',
+    //     title: 'NPL SimpleTools',
+    //     description: 'NO PLACE LEFT simple training tools',
+    //     logoUrl: 'assets/nplsimpletools.png',
+    //     link: 'https://www.nplsimpletools.com/',
+    //     category: Category.Training,
+    //     isFeatured: true
+    // },
+    // {
+    //     name: 'LivingHope',
+    //     title: 'LivingHope.School',
+    //     description: 'The purpose of this site is to freely give others one easily accessible website with simple, biblical, language specific tools to assist in their obedience to Jesus.',
+    //     logoUrl: 'assets/livinghope.school.jpg',
+    //     link: 'https://www.livinghope.school/',
+    //     category: Category.Training
+    // }
 ]

@@ -1,14 +1,16 @@
 <header class="tools-header">
     <h1>NoPlaceLeft.Tools</h1>
-    <h2>Tools used across the network for training disciples to make disciples</h2>
+    <h2>A new experience for discovering tools within the network <strong>coming soon</strong>!</h2>
 
-    <button mat-raised-button>
-        Get Started
-    </button>
+    <a mat-raised-button
+       href="https://gapp.taethni.com"
+       target="_blank">
+        GAPP / GenMapper 2.0
+    </a>
 </header>
 
 <main fxLayout="column"
-      fxLayoutAlign="center center"
+      fxLayoutAlign="start center"
       class="mat-app-background">
 
     <section fxLayout="column">
@@ -16,7 +18,8 @@
             <h2>Featured Tools</h2>
             <article fxLayout="row"
                      fxLayout.lt-md="column"
-                     fxLayoutGap="24px">
+                     fxLayoutGap="24px"
+                     fxLayoutAlign="center center">
                 <ng-container *ngFor="let tool of featured">
                     <app-tool-card [tool]="tool"></app-tool-card>
                 </ng-container>
@@ -25,7 +28,7 @@
     </section>
 
     <mat-divider></mat-divider>
-
+    <!--
     <section fxLayout="column">
         <header>
             <h2>Training</h2>
@@ -52,5 +55,5 @@
                 </ng-container>
             </article>
         </header>
-    </section>
+    </section> -->
 </main>
