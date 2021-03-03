@@ -7,6 +7,11 @@ const routes: Routes = [
     {
         path: '',
         component: ToolsComponent
+    },
+    {
+        path: '**',
+        pathMatch: 'full',
+        redirectTo: ''
     }
 ];
 
