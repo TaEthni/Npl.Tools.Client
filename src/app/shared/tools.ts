@@ -6,7 +6,7 @@ export const TOOLS: Tool[] = [
         title: 'GAPP',
         description: 'GenMapper 2.0 (Gospel to All Peoples and Places)',
         logoUrl: 'assets/GAPP_logo_ver.png',
-        link: 'https://gapp.taethni.com',
+        link: 'https://taethni.com/home/gapp',
         category: Category.GenMapper,
         comingSoon: true,
         isFeatured: true
